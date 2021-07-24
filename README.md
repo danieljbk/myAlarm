@@ -22,7 +22,7 @@ Create alarms using your own audio files.
 
 # Note:
 - myAlarm will continue to play until you terminate the Terminal.
-- You may enter floating-point values for the minutes, such as 0.25 or 3.5.
+- For minutes, you may enter floating-point values such as 0.25 or 3.14.
 - It is recommended that you restart the kernal after running myAlarm once to avoid playback glitches.
 
 # Caution:
