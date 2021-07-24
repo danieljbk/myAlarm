@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/79312811/126854981-9494bab4-f3a4-4e1a-891a-0607461d6872.png" width="400" height="400">
+<img src="https://user-images.githubusercontent.com/79312811/126854981-9494bab4-f3a4-4e1a-891a-0607461d6872.png" width="200" height="200">
 
 # myAlarm
 Create alarms using your own audio files.
