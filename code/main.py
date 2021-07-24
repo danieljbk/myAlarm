@@ -18,6 +18,7 @@ except ImportError:
     os.system('python -m pip3 install simpleaudio')
     os.system('python -m pip install simpleaudio')
 
+# after installing, actually import the modules
 import osascript
 import simpleaudio as sa
 
