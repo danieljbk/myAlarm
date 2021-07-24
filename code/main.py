@@ -87,7 +87,7 @@ def setup_time(): # when running the script, the user sets the audio to play aft
 
 
 morningcalls = list(reversed(glob.glob( # reversed because glob reads 3-2-1 and not 1-2-3
-    "/Users/daniel/Library/Mobile Documents/com~apple~CloudDocs/Downloads/Other/Permanent Storage/Morning Calls/*.wav")))
+    "assets/audio/*.wav")))
 
 times_to_repeat = setup_time()
 while True:
