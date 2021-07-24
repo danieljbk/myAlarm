@@ -86,7 +86,8 @@ def setup_time(): # when running the script, the user sets the audio to play aft
     return times_to_repeat
 
 
-folder_location = input("Drag the folder with audio files into the Terminal.\n").strip()
+# replace '\' because Terminal adds the backslash character before spacing when retrieving file paths
+folder_location = input("Drag the folder with audio files into the Terminal.\n").strip().replace('\\', '')
 extension = "/*.wav"
 morningcalls = list(reversed(glob.glob( # reversed because glob reads 3-2-1 and not 1-2-3
     folder_location+extension)))
@@ -96,5 +97,5 @@ if morningcalls:
     while True:
         play_audio(morningcalls, times_to_repeat)
 else:
-    print(f"No wave files were found inside {folder_location}.")
+    print(f"No files with the extension '.wav' were found inside {folder_location}.")
     exit()
