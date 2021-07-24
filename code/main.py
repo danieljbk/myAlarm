@@ -1,18 +1,23 @@
+# import all modules that come with python
 import os
-
-try:
-    import time
-    import glob
-    import osascript
-    import simpleaudio as sa
-except ImportError:
-    print("Installing required modules...\n")
-    os.system('python -m pip install osascript')
-    os.system('python -m pip install simpleaudio')
-    os.system('python -m pip install glob')
-
 import time
 import glob
+
+# auto-import modules that require additional installation
+try:
+    import osascript
+except ImportError:
+    print("Installing the osascript module...\n")
+    os.system('python -m pip3 install osascript')
+    os.system('python -m pip install osascript')
+
+try:
+    import simpleaudio as sa
+except ImportError:
+    print("Installing the simpleaudio module...\n")
+    os.system('python -m pip3 install simpleaudio')
+    os.system('python -m pip install simpleaudio')
+
 import osascript
 import simpleaudio as sa
 
