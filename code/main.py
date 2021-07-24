@@ -6,7 +6,7 @@ try:
     import osascript
     import simpleaudio as sa
 except ImportError:
-    print "Trying to Install required modules...\n"
+    print("Installing required modules...\n")
     os.system('python -m pip install osascript')
     os.system('python -m pip install simpleaudio')
     os.system('python -m pip install glob')
