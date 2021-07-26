@@ -2,29 +2,9 @@
 import os
 import time
 import glob
-
-# auto-import modules that require additional installation
-try:
-    import osascript
-except ImportError:
-    print("Installing the osascript module...\n")
-    try:
-        os.system('python -m pip install osascript')
-    except ImportError:
-        os.system('python -m pip3 install osascript')
-
-try:
-    import simpleaudio as sa
-except ImportError:
-    print("Installing the simpleaudio module...\n")
-    try:
-        os.system('python -m pip install simpleaudio')
-    except ImportError:
-        os.system('python -m pip3 install simpleaudio')
-
-# after installing, actually import the modules
-import osascript
-import simpleaudio as sa
+from auto_import import auto_import # auto-import modules that require additional installation
+exec(auto_import("osascript"))
+exec(auto_import("simpleaudio"))
 
 indent = "    * "
 
