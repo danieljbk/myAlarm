@@ -8,15 +8,19 @@ try:
     import osascript
 except ImportError:
     print("Installing the osascript module...\n")
-    os.system('python -m pip3 install osascript')
-    os.system('python -m pip install osascript')
+    try:
+        os.system('python -m pip install osascript')
+    except ImportError:
+        os.system('python -m pip3 install osascript')
 
 try:
     import simpleaudio as sa
 except ImportError:
     print("Installing the simpleaudio module...\n")
-    os.system('python -m pip3 install simpleaudio')
-    os.system('python -m pip install simpleaudio')
+    try:
+        os.system('python -m pip install simpleaudio')
+    except ImportError:
+        os.system('python -m pip3 install simpleaudio')
 
 # after installing, actually import the modules
 import osascript
